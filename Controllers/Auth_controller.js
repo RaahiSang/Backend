@@ -108,12 +108,27 @@ const forgetpassword = async (req, res) => {
     }
   });
 
-
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: email,
     subject: 'Reset Your Password',
-    text: `https://ajaydangoriyatharu.pythonanywhere.com/room/->>>>>${user._id}/->>>>>>${Token}`
+    text: `Reset Password
+
+A password reset event has been triggered for your RaahiSang Company account. The password reset window is limited to two hours.
+
+If you do not reset your password within this time, you will need to submit a new request.
+
+To complete the password reset process, click the link below:
+
+🔗 Reset Your Password
+ https://ajaydangoriyatharu.pythonanywhere.com/room/// ->>>>>${user._id}/->>>>>>${Token}"
+
+
+
+If you didn’t request this, please ignore this email or contact RaahiSang Support immediately.
+RaahiSang Company
+📧raahisang@gmail.com | 🌐 www.raahisang.com🚀`
+
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
