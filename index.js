@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const AuthRouter = require("./Routes/AuthRouter");
-const ProductRouter = require("./Routes/ProductRouter");
+const FormDataRouter = require("./Routes/FormDataRouter");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 app.use(bodyParser.json());
 app.use(cors());
 app.use("/auth", AuthRouter.router);
-app.use("/product", ProductRouter.router);
+app.use("/user", FormDataRouter.router);
 
 const PORT = process.env.PORT || 8000;
 
