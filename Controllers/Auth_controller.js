@@ -124,7 +124,6 @@ To complete the password reset process, click the link below:
  https://ajaydangoriyatharu.pythonanywhere.com/room/// ->>>>>${user._id}/->>>>>>${Token}"
 
 
-
 If you didn’t request this, please ignore this email or contact RaahiSang Support immediately.
 RaahiSang Company
 📧raahisang@gmail.com | 🌐 www.raahisang.com🚀`
@@ -168,7 +167,6 @@ const resetPassword = async (req, res) => {
     return res.status(500).json({ message: "Server error", success: false });
   }
 };
-
 
 
 module.exports = {
