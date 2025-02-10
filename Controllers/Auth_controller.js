@@ -121,7 +121,7 @@ If you do not reset your password within this time, you will need to submit a ne
 To complete the password reset process, click the link below:
 
 🔗 Reset Your Password
- https://ajaydangoriyatharu.pythonanywhere.com/room/// ->>>>>${user._id}/->>>>>>${Token}"
+ https://raahisang.com/resetpassword/${user._id}/${Token}"
 
 
 If you didn’t request this, please ignore this email or contact RaahiSang Support immediately.
